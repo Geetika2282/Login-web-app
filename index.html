@@ -4,22 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login/ SignUp</title>
+    <title>Login</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 
 <body>
+    <!-- <main id="main-holder"> -->
     <div class="container">
-        <form action="script.js">
-            <h1>Login</h1>
-            <label for="name">Username</label>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="pwd">Password</label>
-            <input type="password" id="name" name="name"><br><br>
-            <button class="btn">Submit</button>
-            <p>No account? <a href="">Sign up</a></p>
+        <h1 id="login-header">Login</h1>
+
+        <div id="login-error-msg-holder">
+            <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+        </div>
+
+        <form id="login-form">
+            <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+            <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+            <button id="clear">Clear</button>
+            <button id="submit">Submit</button>
         </form>
     </div>
+    <!-- </main> -->
 </body>
 
 </html>
