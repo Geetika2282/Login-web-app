@@ -26,13 +26,31 @@ body {
 }
 
 .container {
-    width: 50%;
-    height: 50%;
-    display: grid;
-    justify-items: center;
-    align-items: center;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
     background-color: rgb(255, 255, 255, 0.4);
     border-radius: 5px;
+    display: grid;
+    justify-items: center;
+    align-items: center;     
+} 
+
+.login-form-field {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+}
+#submit{
+    margin: 5px;
+}
+#clear{
+    margin: 5px;
 }
 
 #login-error-msg-holder {
